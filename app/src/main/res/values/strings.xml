@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TwoFragment_OneActivity</string>
     <string name="accept">Передать</string>
-    <string name="clear">Очистить данные</string>
+    <string name="clear_switch">Вернутся назад и очистить данные</string>
     <string name="first_name">введите имя</string>
     <string name="last_name">введите фамилию</string>
     <string name="email">введите электронную почту</string>

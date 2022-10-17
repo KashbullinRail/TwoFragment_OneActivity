@@ -7,21 +7,21 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/tvFirstName"
+        android:id="@+id/etFirstName"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/first_name" />
 
     <EditText
-        android:id="@+id/tvLastName"
+        android:id="@+id/etLastName"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/last_name" />
 
     <EditText
-        android:id="@+id/tvEmail"
+        android:id="@+id/etEmail"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
