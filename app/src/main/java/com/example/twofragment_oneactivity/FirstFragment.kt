@@ -5,9 +5,13 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
-import java.util.*
+import androidx.fragment.app.activityViewModels
+
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
+
+    private val dataModel: DataModel by activityViewModels()
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -16,6 +20,10 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         val etLastName = requireActivity().findViewById<EditText>(R.id.etLastName)
         val etEmail = requireActivity().findViewById<EditText>(R.id.etEmail)
         val btnAccept = requireActivity().findViewById<Button>(R.id.btnAccept)
+
+        dataModel.firstname.value = etFirstName.text.toString()
+        dataModel.lastName.value = etLastName.text.toString()
+        dataModel.email.value = etEmail.text.toString()
 
         btnAccept.setOnClickListener {
             parentFragmentManager
@@ -26,15 +34,5 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         }
 
     }
-//    companion object {
-//        fun newInstance(): FirstFragment {
-//            val args = Bundle().apply {
-//                contract(firstName = "34645")
-//            }
-//            return FirstFragment().apply {
-//                arguments = args
-//            }
-//        }
-//    }
 
 }

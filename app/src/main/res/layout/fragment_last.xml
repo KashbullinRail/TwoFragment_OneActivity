@@ -8,24 +8,27 @@
 
     <TextView
         android:id="@+id/tvFirstNameGet"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/first_name" />
+        android:gravity="center"
+        android:hint="@string/no_first_name"
+        android:text="" />
 
     <TextView
         android:id="@+id/tvLastNameGet"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/last_name" />
+        android:gravity="center"
+        android:hint="@string/no_last_name"
+        android:text="" />
 
     <TextView
         android:id="@+id/tvEmailGet"
-        android:gravity="center"
         android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        android:text="@string/email" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/no_email"
+        android:text="" />
 
     <Button
         android:id="@+id/btnClear_Switch"
