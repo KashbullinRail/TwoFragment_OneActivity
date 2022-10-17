@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import java.util.*
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
 
@@ -25,5 +26,15 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         }
 
     }
+//    companion object {
+//        fun newInstance(): FirstFragment {
+//            val args = Bundle().apply {
+//                contract(firstName = "34645")
+//            }
+//            return FirstFragment().apply {
+//                arguments = args
+//            }
+//        }
+//    }
 
 }
