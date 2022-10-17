@@ -21,11 +21,12 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         val etEmail = requireActivity().findViewById<EditText>(R.id.etEmail)
         val btnAccept = requireActivity().findViewById<Button>(R.id.btnAccept)
 
-        dataModel.firstname.value = etFirstName.text.toString()
-        dataModel.lastName.value = etLastName.text.toString()
-        dataModel.email.value = etEmail.text.toString()
-
         btnAccept.setOnClickListener {
+
+            dataModel.firstname.value = etFirstName.text.toString()
+            dataModel.lastName.value = etLastName.text.toString()
+            dataModel.email.value = etEmail.text.toString()
+
             parentFragmentManager
                 .beginTransaction()
                 .replace(android.R.id.content, LastFragment())
